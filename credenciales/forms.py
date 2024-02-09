@@ -17,4 +17,7 @@ class CredencialesForm(forms.ModelForm):
     class Meta:
         model = Credenciales
         fields = ['rut', 'password']
+        widgets = {
+            'password': forms.PasswordInput(),
+        }
 
